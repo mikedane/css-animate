@@ -1,0 +1,35 @@
+
+<pre>
+    <code id="code" class="css">
+{% include css/_base.css %}
+    </code>
+</pre>
+
+{% for animation_category in site.data.animations.animations %}
+<h2>{{ animation_category.name }}</h2>
+    {% for animation in animation_category.css %}
+    <h3>{{ animation.name }}</h3>
+    {% assign path = 'css/' | append: animation_category.folder | append: '/' | append: animation.resource | append: '.css' %}
+         {% if animation.shouldHover == true %}
+            <p>Hover over shape to see animation</p>
+            <div style="width: 100px; height: 100px; border-radius: 100%"
+                 onmouseenter="this.children[0].classList.add('{{animation.resource}}')"
+                 onmouseleave="this.children[0].classList.remove('{{animation.resource}}')">
+                    <div class="animated infinite" 
+                    style="width: 100px; height: 100px; background-color: blue; border-radius: 20%"
+                    >
+                    </div>
+            </div>
+         {% else %}
+            <div class="animated infinite {{ animation.resource }}" 
+            style="width: 100px; height: 100px; background-color: blue; border-radius: 20%"
+            >
+            </div>
+         {% endif %}
+    <pre>
+        <code id="code" class="css">
+{% include {{ path }} %}
+        </code>
+    </pre>
+    {% endfor %}
+{% endfor %}

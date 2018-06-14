@@ -1,0 +1,208 @@
+animations:
+  - name: Attention Seekers
+    folder: attention_seekers
+    css: 
+      - name: Bounce
+        resource: bounce
+      - name: Flash
+        resource: flash
+      - name: Head Shake
+        resource: headShake
+      - name: Jello
+        resource: jello
+      - name: Pulse
+        resource: pulse
+      - name: Rubber Band
+        resource: rubberBand
+      - name: Shake
+        resource: shake
+      - name: Swing
+        resource: swing
+      - name: Tada
+        resource: tada
+      - name: Wobble
+        resource: wobble
+  - name: Bouncing Entrances
+    folder: bouncing_entrances
+    css: 
+      - name: Bounce In
+        resource: bounceIn
+      - name: Bounce In Down
+        resource: bounceInDown
+        shouldHover: true
+      - name: Bounce In Left
+        resource: bounceInLeft
+      - name: Bounce In Right
+        resource: bounceInRight
+      - name: Bounce In Up
+        resource: bounceInUp
+        shouldHover: true
+  - name: Bouncing Exits
+    folder: bouncing_exits
+    css: 
+      - name: Bounce Out
+        resource: bounceOut
+      - name: Bounce Out Down
+        resource: bounceOutDown
+        shouldHover: true
+      - name: Bounce Out Left
+        resource: bounceOutLeft
+      - name: Bounce Out Right
+        resource: bounceOutRight
+      - name: Bounce Out Up
+        resource: bounceOutUp
+        shouldHover: true
+  - name: Fading Entrances
+    folder: fading_entrances
+    css: 
+      - name: Fade In
+        resource: fadeIn
+      - name: Fade In Down
+        resource: fadeInDown
+      - name: Fade In Down Big
+        resource: fadeInDownBig
+        shouldHover: true
+      - name: Fade In Left
+        resource: fadeInLeft
+      - name: Fade In Left Big
+        resource: fadeInLeftBig
+      - name: Fade In Right
+        resource: fadeInRight
+      - name: Fade In Right Big
+        resource: fadeInRightBig
+      - name: Fade In Up
+        resource: fadeInUp
+      - name: Fade In Up Big
+        resource: fadeInUpBig  
+        shouldHover: true           
+  - name: Fading Exits
+    folder: fading_exits
+    css: 
+      - name: Fade Out
+        resource: fadeOut
+      - name: Fade Out Down
+        resource: fadeOutDown
+      - name: Fade Out Down Big
+        resource: fadeOutDownBig
+        shouldHover: true
+      - name: Fade Out Left
+        resource: fadeOutLeft
+      - name: Fade Out Left Big
+        resource: fadeOutLeftBig
+      - name: Fade Out Right
+        resource: fadeOutRight
+      - name: Fade Out Right Big
+        resource: fadeOutRightBig
+      - name: Fade Out Up
+        resource: fadeOutUp
+      - name: Fade Out Up Big
+        resource: fadeOutUpBig
+        shouldHover: true
+  - name: Flippers
+    folder: flippers
+    css: 
+      - name: Flip
+        resource: flip
+      - name: Flip In X
+        resource: flipInX
+      - name: Flip In Y
+        resource: flipInY
+      - name: Flip Out X
+        resource: flipOutX
+      - name: Flip Out Y
+        resource: flipOutY
+  - name: Light Speed
+    folder: lightspeed
+    css: 
+      - name: Light Speed In
+        resource: lightSpeedIn
+      - name: Light Speed Out
+        resource: lightSpeedOut
+  - name: Rotating Entrances
+    folder: rotating_entrances
+    css: 
+      - name: Rotate In
+        resource: rotateIn
+      - name: Rotate In Down Left
+        resource: rotateInDownLeft
+      - name: Rotate In Down Right
+        resource: rotateInDownRight
+      - name: Rotate In Up Left
+        resource: rotateInUpLeft
+      - name: Rotate In Up Right
+        resource: rotateInUpRight
+  - name: Rotating Exits
+    folder: rotating_exits
+    css: 
+      - name: Rotate Out
+        resource: rotateOut
+      - name: Rotate Out Down Left
+        resource: rotateOutDownLeft
+      - name: Rotate Out Down Right
+        resource: rotateOutDownRight
+      - name: Rotate Out Up Left
+        resource: rotateOutUpLeft
+      - name: Rotate Out Up Right
+        resource: rotateOutUpRight
+  - name: Sliding Entrances
+    folder: sliding_entrances
+    css: 
+      - name: Slide In Down
+        resource: slideInDown
+      - name: Slide In Left
+        resource: slideInLeft
+      - name: Slide In Right
+        resource: slideInRight
+      - name: Slide In Up
+        resource: slideInUp
+  - name: Sliding Exits
+    folder: sliding_exits
+    css: 
+      - name: Slide Out Down
+        resource: slideOutDown
+        shouldHover: true
+      - name: Slide Out Left
+        resource: slideOutLeft
+      - name: Slide Out Right
+        resource: slideOutRight
+      - name: Slide Out Up
+        resource: slideOutUp
+        shouldHover: true
+  - name: Specials
+    folder: specials
+    css: 
+      - name: Hinge
+        resource: hinge
+      - name: Jack In The Box
+        resource: jackInTheBox
+        shouldHover: true
+      - name: Roll In
+        resource: rollIn
+      - name: Roll Out
+        resource: rollOut
+  - name: Zooming Entrances
+    folder: zooming_entrances
+    css: 
+      - name: Zoom In
+        resource: zoomIn
+      - name: Zoom In Down
+        resource: zoomInDown
+      - name: Zoom In Left
+        resource: zoomInLeft
+      - name: Zoom In Right
+        resource: zoomInRight
+      - name: Zoom In Up
+        resource: zoomInUp
+  - name: Zooming Exits
+    folder: zooming_exits
+    css: 
+      - name: Zoom Out
+        resource: zoomOut
+      - name: Zoom Out Down
+        resource: zoomOutDown
+      - name: Zoom Out Left
+        resource: zoomOutLeft
+      - name: Zoom Out Right
+        resource: zoomOutRight
+      - name: Zoom Out Up
+        resource: zoomOutUp
