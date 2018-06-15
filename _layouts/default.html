@@ -47,6 +47,7 @@
                                     
                                 ">
                                 {% for animation in animation_category.css %}
+                                    {% assign path = 'css/' | append: animation_category.folder | append: '/' | append: animation.resource | append: '.css' %}
                                     <div style="
                                         display: flex;
                                         min-width: 0;
@@ -84,7 +85,7 @@
 
                                         <pre style=" max-width: 100%;">
                                             <code >
-                                                {% include css/attention_seekers/pulse.css %}    
+{% include {{ path }} %}   
                                             </code>
                                         </pre>
                                     </div>
