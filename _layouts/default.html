@@ -12,7 +12,6 @@
             min-width: 0;
             justify-content: center;
             
-            margin: 20px;
         ">
             <div style="
                 display: flex;
@@ -20,7 +19,6 @@
                 justify-content: center;
                 
                 width: 1400px;
-                margin: 20px;
             ">
                 <div style="
                     display: flex;
@@ -28,7 +26,6 @@
                     min-width: 0;
                     flex-direction: column;
                     
-                    margin: 20px;
                 ">
                     <header><h2>{{ site.title }}</h2></header>
                     {% for animation_category in site.data.animations.animations %}
@@ -37,9 +34,7 @@
                             flex-direction: column;
                             min-width: 0;
                             width: 100%;
-                            margin: 20px;
-                            padding: 20px;
-                          
+                            padding: 10px;
                         ">
                             <h2>{{ animation_category.name }}</h2>
                             
@@ -47,9 +42,7 @@
                                     display: flex;
                                     min-width: 0;
                                     flex-wrap: wrap;
-                                    margin: 20px;
                                     justify-content: space-around;
-                                    padding: 20px;
                                     
                                     
                                 ">
@@ -57,9 +50,7 @@
                                     <div style="
                                         display: flex;
                                         min-width: 0;
-                                        margin: 20px;
                                         align-items: center;
-                                        padding: 20px;
                                         flex-direction: column;
                                         max-width: 550px;
                                         
