@@ -4,108 +4,41 @@
           {% include head.html %}
           {% include js.html %}
      </head>
-
      <body>
-
-        <div style="
-            display: flex;
-            min-width: 0;
-            justify-content: center;
-            
-        ">
-            <div style="
-                display: flex;
-                min-width: 0;
-                justify-content: center;
-                
-                width: 1400px;
-            ">
-                <div style="
-                    display: flex;
-                    align-items: center;
-                    min-width: 0;
-                    flex-direction: column;
+        {% include header.html %}
+        <div class="page-wrap">
+            <div class="content-wrap">
+                <div class="animation-content-wrap">
                     
-                ">
-                    <header><h2>{{ site.title }}</h2></header>
+
                     {% for animation_category in site.data.animations.animations %}
-                        <div style="
-                            display: flex;
-                            flex-direction: column;
-                            min-width: 0;
-                            width: 100%;
-                            padding: 10px;
-                        ">
+                        <div class="animation-category-container">
                             <h2>{{ animation_category.name }}</h2>
-                            
-                                <div style="
-                                    display: flex;
-                                    min-width: 0;
-                                    flex-wrap: wrap;
-                                    justify-content: space-around;
-                                    
-                                    
-                                ">
-                                {% for animation in animation_category.css %}
-                                    {% assign path = 'css/' | append: animation_category.folder | append: '/' | append: animation.resource | append: '.css' %}
-                                    <div style="
-                                        display: flex;
-                                        min-width: 0;
-                                        align-items: center;
-                                        flex-direction: column;
-                                        max-width: 600px;
-                                        
-                                    "> 
-                                        <h3>{{ animation.name }}</h3>
-
-
-
-
-                                        {% if animation.shouldHover == true %}
-                                            <div style="width: 100px; height: 100px; border-radius: 100%"
-                                                onmouseenter="this.children[0].classList.add('{{animation.resource}}')"
-                                                onmouseleave="this.children[0].classList.remove('{{animation.resource}}')">
-                                                    <div class="animated infinite" 
-                                                    style="width: 100px; height: 100px; background-color: red; border-radius: 20%"
-                                                    >
-                                                    </div>
-                                            </div>
-                                            <p>Hover over shape to see animation</p>
-
-                                        {% else %}
-                                            <div class="animated infinite {{ animation.resource }}" 
-                                            style="width: 100px; height: 100px; background-color: red; border-radius: 20%"
-                                            >
-                                            </div>
-                                        {% endif %}
-
-
-
-
-
-                                        <pre style=" width: 600px; max-width: 100%;">
-                                            <code >
-{% include {{ path }} %}   
-                                            </code>
-                                        </pre>
-                                    </div>
-                                {% endfor %}
+                                <div class="animation-category-items">
+                                    {% for animation in animation_category.css %}
+                                        {% assign path = 'css/' | append: animation_category.folder | append: '/' | append: animation.resource | append: '.css' %}
+                                        <div class="animation-item-container "> 
+                                            <h3>{{ animation.name }}</h3>
+                                            {% if animation.shouldHover == true %}
+                                                <div class="animated-item-container"
+                                                    onmouseenter="this.children[0].classList.add('{{animation.resource}}')"
+                                                    onmouseleave="this.children[0].classList.remove('{{animation.resource}}')">
+                                                    <div class="animated infinite animated-item"></div>
+                                                </div>
+                                                <p>Hover over shape to see animation</p>
+                                            {% else %}
+                                                <div class="animated infinite {{ animation.resource }} animated-item" ></div>
+                                            {% endif %}
+                                            <pre class="code-block">
+                                                <code >{% include {{ path }} %}</code>
+                                            </pre>
+                                        </div>
+                                    {% endfor %}
                                 </div>
                         </div>
                     {% endfor %}
-                    
-          
                 </div>
             </div>
-
         </div>
-
-
-
-
-
-
-
-        
     </body>
 </html>
