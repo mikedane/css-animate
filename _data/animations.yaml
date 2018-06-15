@@ -32,8 +32,10 @@ animations:
         shouldHover: true
       - name: Bounce In Left
         resource: bounceInLeft
+        shouldHover: true
       - name: Bounce In Right
         resource: bounceInRight
+        shouldHover: true
       - name: Bounce In Up
         resource: bounceInUp
         shouldHover: true
@@ -47,8 +49,10 @@ animations:
         shouldHover: true
       - name: Bounce Out Left
         resource: bounceOutLeft
+        shouldHover: true
       - name: Bounce Out Right
         resource: bounceOutRight
+        shouldHover: true
       - name: Bounce Out Up
         resource: bounceOutUp
         shouldHover: true
@@ -66,10 +70,12 @@ animations:
         resource: fadeInLeft
       - name: Fade In Left Big
         resource: fadeInLeftBig
+        shouldHover: true
       - name: Fade In Right
         resource: fadeInRight
       - name: Fade In Right Big
         resource: fadeInRightBig
+        shouldHover: true
       - name: Fade In Up
         resource: fadeInUp
       - name: Fade In Up Big
@@ -89,10 +95,12 @@ animations:
         resource: fadeOutLeft
       - name: Fade Out Left Big
         resource: fadeOutLeftBig
+        shouldHover: true
       - name: Fade Out Right
         resource: fadeOutRight
       - name: Fade Out Right Big
         resource: fadeOutRightBig
+        shouldHover: true
       - name: Fade Out Up
         resource: fadeOutUp
       - name: Fade Out Up Big
