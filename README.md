@@ -1,0 +1,2 @@
+# [CSS Motion](http://www.cssmotion.com)
+CSS Motion is a huge website repository of CSS3 animations. Users can browser through our ever expanding database of CSS animations, see them in action and copy the code straight from the page. The site is perfect for anyone who wants to add some flair or pop to their website, and makes it easy to visualze what each animation will look like in production. 
