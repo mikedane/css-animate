@@ -1,0 +1,22 @@
+<aside class=" left-col-article" style="padding-right:0px;">
+    <div id="nav-side-article">
+        <div class="section table-of-contents" id="table-of-contents" style="position: fixed;">
+            <ul>
+                {% for animation_category in site.data.animations.animations %}
+                    <li>
+                        <a href="#{{ animation_category.folder }}">{{ animation_category.name }}</a>
+                        <ul>
+                            {% for animation in animation_category.css %}
+                                
+                                <li>
+                                    <a href="#{{ animation.resource }}">&nbsp;&nbsp;&nbsp;{{ animation.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</aside>
+
